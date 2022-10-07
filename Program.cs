@@ -19,12 +19,10 @@ namespace Bubble_Sort
 				Console.Write("masukan banyaknya elemen pada array :");
 				string s = Console.ReadLine();
 				n = Int32.Parse(s);
-				if (n <= 20)
+				if (n<=20)
 					break;
 				else
-					Console.ReadLine("\nArray dapat mempunyai maksimal 20 elemen.\n");
-
-
+					Console.WriteLine("\nArray dapat mempunyai maksimal 20 elemen.\n");
 			}
 			Console.ReadLine("");
 			Console.ReadLine(".............");
@@ -35,13 +33,25 @@ namespace Bubble_Sort
 			for (int i = 0; i < n; i++)
 			{
 				Console.Write("<" + (i + 1) + "> ");
-				string s1 = Console.Readline();
+				string s1 = Console.ReadLine();
 				a[i] = Int32.Parse(s1);
 			}
 		}
+		public void display()
+        {
+			//menampilkan array yang tersusun
+			Console.WriteLine("");
+			Console.WriteLine(.............);
+			Console.WriteLine("elemen array telah tersusun");
+			Console.WriteLine("....................");
+			for (int j = 0; j<0; j++ )
+            {
+				Console.WriteLine(a[j]);
+            }
+			Console.WriteLine("");
+        }
 
-
-
+		
 
 	};
 
