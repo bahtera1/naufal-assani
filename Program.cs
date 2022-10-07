@@ -41,7 +41,7 @@ namespace Bubble_Sort
         {
 			//menampilkan array yang tersusun
 			Console.WriteLine("");
-			Console.WriteLine(.............);
+			Console.WriteLine("..............");
 			Console.WriteLine("elemen array telah tersusun");
 			Console.WriteLine("....................");
 			for (int j = 0; j<0; j++ )
@@ -70,6 +70,23 @@ namespace Bubble_Sort
             }
         }
 
-	};
+
+		static void Main(string[] args)
+        {
+			// creating the object the bubblesort class
+			program myList = new program();
+			
+			//pemanggilan fungsi untuk meneriama elemen array
+			myList.BubbleSortArray();
+
+			//pemanggilan fungsi untuk menampilkan array yang tersusun
+			myList.display();
+
+			//Exit
+			Console.WriteLine("n\nTekan Tombol Apa saja untuk keluar");
+			Console.Read();
+
+        }
+	}
 
 }
